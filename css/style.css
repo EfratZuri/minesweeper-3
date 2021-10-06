@@ -1,0 +1,118 @@
+.details {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+
+	font-size: 3rem;
+	margin-bottom: 1rem;
+	font-family: 'Roboto Mono', monospace;
+}
+.timer-box {
+	display: inline-block;
+}
+.btn-restart {
+	font-size: inherit;
+	padding: 0.5rem 1rem;
+}
+
+.hints-box {
+	margin-bottom: 1rem;
+	text-align: center;
+	font-size: 3rem;
+	cursor: pointer;
+}
+.form {
+	display: flex;
+	gap: 2rem;
+
+	font-size: 1.8rem;
+	justify-content: center;
+
+	transition: opacity 1s;
+}
+
+.app {
+	/* position: relative; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 6rem;
+
+	margin-bottom: 3rem;
+	transition: opacity 1s;
+}
+/* .app::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: hsla(28, 18%, 84%, 0.3);
+
+	clip-path: polygon(100% 38%, 100% 100%, 0 64%, 0 0);
+	z-index: -1;
+} */
+
+table {
+	box-sizing: border-box;
+}
+td {
+	height: 4rem;
+	width: 4rem;
+
+	font-weight: 600;
+	font-size: 1.8rem;
+	font-family: inherit;
+
+	cursor: pointer;
+	margin: 0 auto;
+
+	background-color: #bbbbbb;
+	transition: background-color 0.3s ease-out;
+}
+.open {
+	background-color: #f7f7f7;
+}
+
+.end {
+	animation: goDown 3s ease-out;
+}
+.manually-create-box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.manually-create {
+	box-shadow: 0 1rem 1.6rem rgba(0, 0, 0, 0.09);
+
+	padding: 1rem 2rem;
+	font-size: 1.6rem;
+	background-color: #bee1e6;
+	border-radius: 2rem;
+	transition: all 0.5s;
+}
+.manually-create-box span {
+	color: #d00000;
+	font-size: 1.4rem;
+}
+.click {
+	animation: s 1s ease-out;
+}
+.f-7-boom label {
+	color: #d00000;
+}
+
+.btn-undo {
+	box-shadow: 0 1rem 1.6rem rgba(0, 0, 0, 0.09);
+	background-image: linear-gradient(to top left, #f9dc5c, #fdf8e1);
+}
+.safe-click-btn {
+	background-image: linear-gradient(to top left, #55a630, #eeef20);
+}
+.btn-7-boom {
+	background-image: linear-gradient(to top left, #eb1d1d, #e75c5c);
+}
+.safe-click-btn:hover {
+	background-image: linear-gradient(to top left, #415d43, #eeef20);
+}
